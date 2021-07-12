@@ -1,6 +1,6 @@
 ﻿Public Class Form1
 
-    Private Sub Txtheight_ValueChanged(sender As Object, e As EventArgs) Handles Txtheight.ValueChanged
+    Private Function Txtheight_ValueChanged() Handles Txtheight.ValueChanged
         Dim w As Single
         Dim h As Single
         Dim ind As Single
@@ -44,6 +44,17 @@
         ElseIf w = 0 Or h = 0 Then
             MsgBox("Введите данные")
         End If
+
+        Me.AcceptButton = Button1
+    End Function
+
+    Private Sub Txtweight_ValueChanged() Handles Txtweight.ValueChanged
+        Me.AcceptButton = Button1
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Txtheight_ValueChanged()
+        Me.AcceptButton = Button1
     End Sub
 
 

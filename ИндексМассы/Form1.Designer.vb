@@ -31,6 +31,7 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Txtweight = New System.Windows.Forms.NumericUpDown()
         Me.Txtheight = New System.Windows.Forms.NumericUpDown()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.Txtweight, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Txtheight, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -121,12 +122,22 @@ Partial Class Form1
         Me.Txtheight.Size = New System.Drawing.Size(66, 22)
         Me.Txtheight.TabIndex = 11
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(37, 162)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(91, 65)
+        Me.Button1.TabIndex = 12
+        Me.Button1.Text = "Расчет"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(325, 435)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Txtheight)
         Me.Controls.Add(Me.Txtweight)
         Me.Controls.Add(Me.Label4)
@@ -157,4 +168,5 @@ Partial Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents Txtweight As NumericUpDown
     Friend WithEvents Txtheight As NumericUpDown
+    Friend WithEvents Button1 As Button
 End Class
